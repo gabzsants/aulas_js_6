@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuleiro</title>
+    <script>
+        function verificar(){
+            let divs = document.getElementsByTagName("div");
+            for(let i=0; i<divs.length; i++){
+                divs[i].innerHTML = i + 1;
+                if(i % 2 == 0) {
+                    divs[i].style.background = "black";
+                    divs[i].style.color = "white";
+                }
+            }
+        }
+        /* function verificar (exemplo alternativo com operadores ternários, sem o uso do if)
+            (i%2 ==0)? divs[i].style.background = "black";
+                    divs[i].style.color = "white"; */
+    </script>
+</head>
+<body>
+    <button onclick="verificar()">Ver</button><br><br>
+    <table border="1" cellspacing="0">
+        <tr>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+        </tr>
+        <tr>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+        </tr>
+        <tr>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+        </tr>
+        <tr>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+        </tr>
+        <tr>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+        </tr>
+        <tr>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+        </tr>
+        <tr>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+            <td><div style="display: table-cell;width:70px; height: 70px;"></div></td>
+        </tr>
+    </table>
+</body>
+</html>

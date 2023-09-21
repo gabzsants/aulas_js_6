@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let frase= "Hoje é quinta-feira, aula de JavaScript!!";
+        function mostrar(){
+            console.log("Texto original:",frase);
+            console.log("lowercase:",frase.toLowerCase());
+            console.log("uppercase:",frase.toUpperCase());
+            console.log("length:",frase.length());
+            console.log("trim:",frase.trim());
+            console.log("Slice:",frase.slice(14,25));
+            console.log("Substring:",frase.substring(14,25));
+        console.log("Replace:",frase.replace("Javascript", "PHP"));
+        console.log("Flag:",frase.replace(/a/v, "@")); //2021
+        }
+
+       for(let a =1; a<=100; a++){
+        let s= ""+a; //casting int --> String
+            document.write(s.padStart(3,"0")+"<br>");
+        }
+
+        let n= "7";
+        console.log(n.padStart(3,"0"));
+        console.log(n.padEnd(3,"0"));
+
+    </script>
+</head>
+<body>
+    <button onclick="mostrar()">Mostrar</button>
+</body>
+</html>

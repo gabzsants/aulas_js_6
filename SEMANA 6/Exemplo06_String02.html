@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Strings</title>
+    <script>
+        let frase = "Mortadela";
+        function mostrar(){
+            console.log("Texto original:",frase);
+            //console.log("CharAt:",frase.charAt(5));
+            let letrasA = 0;
+            for(let i=0; i<frase.length; i++){
+            
+            
+                //if(frase.charAt(i) =="h")  || frase.charAt(i)=="H") letrasA++;
+                if(frase.toUpperCase().charAt(i)=="A") letrasA++;
+
+        }
+        console.log(letrasA);
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="mostrar()">Mostrar</button>
+</body>
+</html>

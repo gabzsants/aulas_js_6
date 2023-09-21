@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisar uma palavra no texto</title>
+    <script>
+        let frase = "Eu acordo todos os dias da semana bem cedo!";
+function localizar(){
+    let p= f.palavra.value;
+    let pos = frase.indexOf(p); //indice
+    if(pos>=0){
+        document.getElementById("saida").innerHTML = "palavra encontrada na posicao"; + pos;
+    }
+    else{
+        document.getElementById("saida").innerHTML = "palavra não encontrada";
+    }
+}   
+    </script>
+</head>
+<body>
+    <form name="f">
+        Digite uma palavra: <input type="text" name="palavra">
+        <input type="button" onclick="localizar()" value="localizar">
+        <input type="reset" value="Limpar">
+        <p id="saida"></p>
+    </form>
+</body>
+</html>
